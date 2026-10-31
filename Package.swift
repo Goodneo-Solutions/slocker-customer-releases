@@ -13,18 +13,18 @@ let package = Package(
         .library(name: "SLockerUI", targets: ["SLockerUI", "SLockerCustomer", "SLockerUISApp"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Goodneo-Solutions/sapp-releases", from: "0.2.2"),
+        .package(url: "https://github.com/Goodneo-Solutions/sapp-releases", from: "0.2.5"),
     ],
     targets: [
         .binaryTarget(
             name: "SLockerCustomer",
-            url: "https://github.com/Goodneo-Solutions/slocker-customer-releases/releases/download/0.2.0/SLockerCustomer.xcframework.zip",
-            checksum: "2b02012c03028aedd1d167b75814c2150fde3fc31b5730a4c50dbe7303ac4c32"
+            url: "https://github.com/Goodneo-Solutions/slocker-customer-releases/releases/download/0.2.1/SLockerCustomer.xcframework.zip",
+            checksum: "cc6eee7c4af2a4fbb47617fd28e743dcc55380ff44d094303237e0e1d08d287d"
         ),
         .binaryTarget(
             name: "SLockerUI",
-            url: "https://github.com/Goodneo-Solutions/slocker-customer-releases/releases/download/0.2.0/SLockerUI.xcframework.zip",
-            checksum: "667c1b0e029184a51d83b8ecea851a1302038300303ab301f7403d105e7e16d9"
+            url: "https://github.com/Goodneo-Solutions/slocker-customer-releases/releases/download/0.2.1/SLockerUI.xcframework.zip",
+            checksum: "c4f9b2e165394aa501c45d729471149f2f25918e16da0e9e7c2ae0713609acb1"
         ),
         // A binary target cannot name dependencies: these two empty targets bring SApp and SAppUI into the products.
         .target(name: "SLockerCustomerSApp", dependencies: [.product(name: "SApp", package: "sapp-releases")], path: "Sources/SLockerCustomerSApp"),
