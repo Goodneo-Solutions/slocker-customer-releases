@@ -18,13 +18,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SLockerCustomer",
-            url: "https://github.com/Goodneo-Solutions/slocker-customer-releases/releases/download/0.2.2/SLockerCustomer.xcframework.zip",
-            checksum: "00e4bdfbddbac5f2bfc577f5d0126751319232c30796f29364b50dfa4a2ef756"
+            url: "https://github.com/Goodneo-Solutions/slocker-customer-releases/releases/download/0.2.5/SLockerCustomer.xcframework.zip",
+            checksum: "e68ddb579999f379be97c063cee6c2f7740cb4fbd2a5ee667b84bee2d423e2af"
         ),
         .binaryTarget(
             name: "SLockerUI",
-            url: "https://github.com/Goodneo-Solutions/slocker-customer-releases/releases/download/0.2.2/SLockerUI.xcframework.zip",
-            checksum: "28c8e198188dc47c4941d05173670cc53ef16f4f30b0d17a48964c7f7a980cf3"
+            url: "https://github.com/Goodneo-Solutions/slocker-customer-releases/releases/download/0.2.5/SLockerUI.xcframework.zip",
+            checksum: "d2fe673aa697afed8fbf0fae5157b35f2e86e068085138970a4d819a189bdadd"
         ),
         // A binary target cannot name dependencies: these two empty targets bring SApp and SAppUI into the products.
         .target(name: "SLockerCustomerSApp", dependencies: [.product(name: "SApp", package: "sapp-releases")], path: "Sources/SLockerCustomerSApp"),
